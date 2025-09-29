@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Визитка с портфолио</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif; margin: 0; background-color: white; color: black;
+        }
+
+        header {
+            background: linear-gradient(135deg, blue, purple);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+            opacity: 0.9;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: #134073;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 8px 16px;
+            border-radius: 4px;
+        }
+
+        main {
+            padding: 40px 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        img {
+            border: 3px solid #44caf3;
+            border-radius: 8px;
+            width: 300px;
+            height: 300px;
+        }
+
+        section#about img {
+
+        }
+
+        section#about {
+            padding: 50px 20px;
+            background-color: white;
+            margin: 30px 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        section#interests li {
+            background-color: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        li {
+            color: blue;
+            font-weight: bold;
+
+        }
+
+        li::marker {
+            color: black
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .project-card {
+            background-color: #f8f9fa;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        section#contacts {
+            background-color: #f1f8ff;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .contact-item {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            min-width: 200px;
+        }
+
+        .contact-item i {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #3498db;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-family: inherit;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+
+
+    </style>
+</head>
+<body>
+<header>
+    <h1>Микрюков Вячеслав</h1>
+    <p>Начинающий веб-программист</p>
+</header>
+
+<nav>
+    <a href="#about">Обо мне</a>
+    <a href="#interests">Интересы</a>
+    <a href="#projects">Проекты</a>
+    <a href="#contacts">Контакты</a>
+</nav>
+
+<main class="container">
+    <section id="about" class="about">
+        <article>
+            <h2>Обо мне</h2>
+            <p>Я учу веб-разработку и активно осваиваю HTML, CSS и JavaScript. Также осваиваю Python</p>
+        </article>
+        <img src="imgs/im1.jpg" alt="Собственно это я">
+    </section>
+    <section id="interests" class="interests">
+        <h2>Интересы</h2>
+        <ul>
+            <li>Программирование</li>
+            <li>Крипта</li>
+            <li>Компьютерные игры</li>
+            <li>Прослушивание книг</li>
+        </ul>
+    </section>
+    <section id="projects" class="projects">
+        <h2>Мои проекты</h2>
+            <div class="project-card">
+                <img src="imgs/project1.jpg" alt="Проект 1">
+                <div class="info">
+                    <h3>Личный блог</h3>
+                    <p>Сайт на HTML и CSS с адаптивным дизайном - <a href="https://example.com">Личный блог</a></p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="imgs/project2.jpg" alt="Проект 2">
+                <div class="info">
+                    <h3>Калькулятор</h3>
+                    <p>Простой калькулятор на JS - <a href="https://example.com">Калькулятор</a></p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="imgs/project3.jpg" alt="Проект 3">
+                <div class="info">
+                    <h3>Тестовый сайт</h3>
+                    <p>Сайт-магазин - <a href="https://example.com">Магазин обуви</a></p>
+                </div>
+            </div>
+    </section>
+    <section id="contacts" class="contacts">
+        <h2>Контакты</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <i>📧</i>
+                <p><strong>Электронная почта</strong></p>
+                <p>slava@example.com</p>
+            </div>
+            <div class="contact-item">
+                <i>📞</i>
+                <p><strong>Номер телефона</strong></p>
+                <p>+7 (999) 987-65-43</p>
+            </div>
+            <div class="contact-item">
+                <i>📍</i>
+                <p><strong>Город</strong></p>
+                <p>Ижевск</p>
+            </div>
+        </div>
+    <form>
+        <h3>Отправить сообщение</h3>
+        <div class="form-group">
+            <label for="name">Имя</label>
+            <input type="text" id="name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email">
+        </div>
+        <div class="form-group">
+            <label for="message">Сообщение</label>
+            <textarea id="message" rows="4"></textarea>
+        </div>
+        <button type="submit">Отправить</button>
+    </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Микрюков Вячеслав</p>
+    </footer>
+</main>
+</body>
+</html>
